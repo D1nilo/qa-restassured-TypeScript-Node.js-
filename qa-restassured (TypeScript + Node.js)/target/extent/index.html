@@ -1,0 +1,2025 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QA REST Assured</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">nov 5, 2025 01:47:47 a. m.</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">listAvailable()</p>
+            <p class="text-sm">
+              <span>1:47:48 a. m.</span> / <span>00:00:02:442</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">listAvailable()</h5>
+<span class='badge badge-success'>11.05.2025 1:47:48 a. m.</span>
+<span class='badge badge-danger'>11.05.2025 1:47:51 a. m.</span>
+<span class='badge badge-default'>00:00:02:442</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">[engine:junit-platform-suite]/[suite:qa.runner.AllTestsRunner]/[engine:junit-jupiter]/[class:qa.specs.PetstoreSpec]/[method:listAvailable()]</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:50 a. m.</td>
+        <td>
+          ➡️ Request: GET https://petstore.swagger.io/v2/pet/findByStatus?status=available
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:50 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:50 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (1560 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:50 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:50 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>[
+    {
+        "id": 9223372036854738694,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 12347,
+        "category": {
+            "id": 3,
+            "name": "Bird"
+        },
+        "name": "PetC",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "checksum:d401fdd98b91816ef325ace2b4d0b0b6"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738699,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738706,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 2004,
+        "category": {
+            "id": 2004,
+            "name": "Cat2004"
+        },
+        "name": "Pet2004",
+        "photoUrls": [
+            "https://example.com/pet2004.jpg"
+        ],
+        "tags": [
+            {
+                "id": 2004,
+                "name": "tmp"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 4,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "pastor",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738741,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "habiba",
+            "Kallie"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 50001,
+        "name": "Rex",
+        "photoUrls": [
+            "https://example.com/photo.jpg"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "Chicks"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 22334567771,
+        "category": {
+            "id": 88888812,
+            "name": "ABC1"
+        },
+        "name": "doggie111",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 192873733,
+                "name": "Test"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738802,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9222968140497180179,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "test",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 200,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "pastor",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 78730,
+        "category": {
+            "id": 1,
+            "name": "Cat"
+        },
+        "name": "Snowwhite",
+        "photoUrls": [
+            ""
+        ],
+        "tags": [
+            {
+                "id": 101,
+                "name": "Snowwhite"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 78732,
+        "category": {
+            "id": 3,
+            "name": "Snake"
+        },
+        "name": "Orochimaru",
+        "photoUrls": [
+            ""
+        ],
+        "tags": [
+            {
+                "id": 303,
+                "name": "Orochimaru"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9222968140491042131,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738906,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738908,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738913,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 45791,
+        "name": "Buddy",
+        "photoUrls": [
+            "https://example.com/photo.jpg"
+        ],
+        "tags": [
+            
+        ],
+        "status": "available"
+    },
+    {
+        "id": 2818,
+        "category": {
+            "id": 2818,
+            "name": "APIBrokerSME"
+        },
+        "name": "Chubb123$",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 123,
+                "name": "Arvilla"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 87654,
+        "name": "Buddy",
+        "photoUrls": [
+            "https://example.com/photo.jpg"
+        ],
+        "tags": [
+            
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738972,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "Puff",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738975,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854738987,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739099,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739112,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 2005,
+        "category": {
+            "id": 2005,
+            "name": "Cat2005"
+        },
+        "name": "Pet2005",
+        "photoUrls": [
+            "https://example.com/pet2005.jpg"
+        ],
+        "tags": [
+            {
+                "id": 2005,
+                "name": "tmp"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739181,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9098,
+        "category": {
+            "id": 8141,
+            "name": "reptiles"
+        },
+        "name": "Sage",
+        "photoUrls": [
+            "photo_1"
+        ],
+        "tags": [
+            {
+                "id": 3583,
+                "name": "rescue"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 631,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "Adrien",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739228,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 555,
+        "category": {
+            "id": 1,
+            "name": "dummy_category"
+        },
+        "name": "dummy_name",
+        "photoUrls": [
+            "dummy_photo_url_1",
+            "dummy_photo_url_2"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "dummy_tag_1"
+            },
+            {
+                "id": 2,
+                "name": "dummy_tag_2"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 12,
+        "category": {
+            "id": 1,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739288,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739291,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "fish",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739310,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739319,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739333,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739338,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 795695,
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "name": "TestDog-795695",
+        "photoUrls": [
+            "https://example.com/photo1.jpg"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "test-tag"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 3428,
+        "category": {
+            "id": 5330,
+            "name": "cats"
+        },
+        "name": "Cleo",
+        "photoUrls": [
+            "photo_1"
+        ],
+        "tags": [
+            {
+                "id": 7194,
+                "name": "nocturnal"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 3438,
+        "category": {
+            "id": 2980,
+            "name": "reptiles"
+        },
+        "name": "Drizzle",
+        "photoUrls": [
+            "photo_1"
+        ],
+        "tags": [
+            {
+                "id": 2609,
+                "name": "rescue"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 1212,
+        "category": {
+            "id": 3,
+            "name": "cats"
+        },
+        "name": "Betty",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            {
+                "id": 4,
+                "name": "black&white"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 1215,
+        "category": {
+            "id": 3,
+            "name": "cats"
+        },
+        "name": "Din",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            {
+                "id": 4,
+                "name": "black&white"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 915,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "Jaycee",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739418,
+        "category": {
+            "id": 0,
+            "name": ""
+        },
+        "name": "Corrine",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739426,
+        "category": {
+            "id": 0,
+            "name": ""
+        },
+        "name": "Otto",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854739432,
+        "category": {
+            "id": 0,
+            "name": ""
+        },
+        "name": "Fidel",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 2002,
+        "category": {
+            "id": 2002,
+            "name": "Cat2002"
+        },
+        "name": "Pet2002",
+        "photoUrls": [
+            "https://example.com/pet2002.jpg"
+        ],
+        "tags": [
+            {
+                "id": 2002,
+                "name": "tmp"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 191,
+        "name": "doggie",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "available"
+    },
+    {
+        "id": 34567,
+        "name": "taffy",
+        "photoUrls": [
+            "https://example.com/photo.jpg"
+        ],
+        "tags": [
+            
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9223372036854774630,
+        "category": {
+            "id": 0,
+            "name": "Dog"
+        },
+        "name": "snizz",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 567772,
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "name": "TestDog-567772",
+        "photoUrls": [
+            "https://example.com/photo1.jpg"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "test-tag"
+            }
+        ],
+        "status": "available"
+    }
+]</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:47:51 a. m.</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">createPet()</p>
+            <p class="text-sm">
+              <span>1:47:51 a. m.</span> / <span>00:00:01:445</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createPet()</h5>
+<span class='badge badge-success'>11.05.2025 1:47:51 a. m.</span>
+<span class='badge badge-danger'>11.05.2025 1:47:52 a. m.</span>
+<span class='badge badge-default'>00:00:01:445</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">[engine:junit-platform-suite]/[suite:qa.runner.AllTestsRunner]/[engine:junit-jupiter]/[class:qa.specs.PetstoreSpec]/[method:createPet()]</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          ➡️ Request: POST https://petstore.swagger.io/v2/pet
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{"status":"available","photoUrls":["https://example.com/dog.jpg"],"name":"Rocky-RA","tags":[{"id":1,"name":"friendly"}],"category":{"id":1,"name":"dog"},"id":9816552}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (668 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:51 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "id": 9816552,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Rocky-RA",
+    "photoUrls": [
+        "https://example.com/dog.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        }
+    ],
+    "status": "available"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:47:52 a. m.</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">updatePet()</p>
+            <p class="text-sm">
+              <span>1:47:52 a. m.</span> / <span>00:00:00:712</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updatePet()</h5>
+<span class='badge badge-success'>11.05.2025 1:47:52 a. m.</span>
+<span class='badge badge-danger'>11.05.2025 1:47:53 a. m.</span>
+<span class='badge badge-default'>00:00:00:712</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">[engine:junit-platform-suite]/[suite:qa.runner.AllTestsRunner]/[engine:junit-jupiter]/[class:qa.specs.PetstoreSpec]/[method:updatePet()]</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          ➡️ Request: PUT https://petstore.swagger.io/v2/pet
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{"status":"sold","photoUrls":["https://example.com/dog.jpg"],"name":"Rocky-Updated","tags":[{"id":1,"name":"friendly"}],"category":{"id":1,"name":"dog"},"id":9816552}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (691 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:52 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "id": 9816552,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Rocky-Updated",
+    "photoUrls": [
+        "https://example.com/dog.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        }
+    ],
+    "status": "sold"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getById()</p>
+            <p class="text-sm">
+              <span>1:47:53 a. m.</span> / <span>00:00:00:739</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getById()</h5>
+<span class='badge badge-success'>11.05.2025 1:47:53 a. m.</span>
+<span class='badge badge-danger'>11.05.2025 1:47:53 a. m.</span>
+<span class='badge badge-default'>00:00:00:739</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">[engine:junit-platform-suite]/[suite:qa.runner.AllTestsRunner]/[engine:junit-jupiter]/[class:qa.specs.PetstoreSpec]/[method:getById()]</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          ➡️ Request: GET https://petstore.swagger.io/v2/pet/9816552
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (682 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:53 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "id": 9816552,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Rocky-RA",
+    "photoUrls": [
+        "https://example.com/dog.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        }
+    ],
+    "status": "available"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:47:53 a. m.</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deletePet()</p>
+            <p class="text-sm">
+              <span>1:47:53 a. m.</span> / <span>00:00:03:562</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deletePet()</h5>
+<span class='badge badge-success'>11.05.2025 1:47:53 a. m.</span>
+<span class='badge badge-danger'>11.05.2025 1:47:57 a. m.</span>
+<span class='badge badge-default'>00:00:03:562</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">[engine:junit-platform-suite]/[suite:qa.runner.AllTestsRunner]/[engine:junit-jupiter]/[class:qa.specs.PetstoreSpec]/[method:deletePet()]</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:54 a. m.</td>
+        <td>
+          ➡️ Request: DELETE https://petstore.swagger.io/v2/pet/9816552
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:54 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:54 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (665 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:54 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:54 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:54 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "code": 200,
+    "type": "unknown",
+    "message": "9816552"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:55 a. m.</td>
+        <td>
+          ➡️ Request: GET https://petstore.swagger.io/v2/pet/9816552
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:55 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:55 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (667 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:55 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:54 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:55 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "id": 9816552,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Rocky-RA",
+    "photoUrls": [
+        "https://example.com/dog.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        }
+    ],
+    "status": "available"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:56 a. m.</td>
+        <td>
+          ➡️ Request: GET https://petstore.swagger.io/v2/pet/9816552
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:56 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:56 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 200 OK (664 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:56 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:55 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:56 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "id": 9816552,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Rocky-RA",
+    "photoUrls": [
+        "https://example.com/dog.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        }
+    ],
+    "status": "available"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          ➡️ Request: GET https://petstore.swagger.io/v2/pet/9816552
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          ⬅️ Response: HTTP/1.1 404 Not Found (666 ms)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>Date=Wed, 05 Nov 2025 04:47:57 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}</textarea>
+ </div>
+ <div class='col-md-6'>
+  <textarea readonly class='code-block'>json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:47:57 a. m.</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>nov 5, 2025 01:47:47 a. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>nov 5, 2025 01:47:57 a. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='10%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>42</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"listAvailable()":2.442,"createPet()":1.445,"updatePet()":0.712,"getById()":0.739,"deletePet()":3.562
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>qa-restassured</td>
+</tr>
+<tr>
+<td>Base URL</td>
+<td>https://petstore.swagger.io/v2</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>22.0.1</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 42
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
